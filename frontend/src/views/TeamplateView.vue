@@ -1,21 +1,21 @@
 <template>
     <main>
         <UserBtn />
-        <div class="logo-lg">
+        <div class="logo-sm">
             <h1>To Know</h1>
-            <router-link to="/game">
-                <BtnStroke>
-                    Começar
-                </BtnStroke>
-            </router-link>
-            <HelpText />
         </div>
+        <router-link to="/">
+            <BtnStroke>
+                Voltar
+            </BtnStroke>
+        </router-link>
         <LogoIF />
-        <AuthorDiv />
+        <span class="help">
+            <img src="../assets/img/iconHelp.png" alt="">
+        </span>
 </main>
 </template>
 <script>
-import HelpText from '../components/HelpText.vue'
 import BtnStroke from '../components/BtnStroke.vue'
 import LogoIF from '../components/LogoIF.vue'
 import AuthorDiv from '../components/AuthorDiv.vue'
@@ -24,7 +24,6 @@ import UserBtn from '../components/UserBtn.vue'
 export default {
     // add component
     components: {
-        HelpText,
         BtnStroke,
         LogoIF,
         AuthorDiv,
@@ -35,15 +34,32 @@ export default {
 
 <style>
 
-main {
-    text-align: center;
+.logo-sm {
+    position: fixed;
+    top: 0;
+    left: 1.5em;
+    display: flex;
+    gap: .5em;
+    justify-content: center;
+    align-items: center;
+    max-height: 80px;
 }
 
-.logo-lg h1 {
-    font-size: 7em;
+.logo-sm h1 {
+    font-size: 2em;
     color: var(--primary-color);
     font-family: 'Bungee Shade', cursive;
     margin-bottom: .5em;
+}
+
+.help {
+    position: fixed;
+    bottom: 1.5em;
+    left: 1.5em;
+}
+
+.help img {
+    max-height: 70px;
 }
 
 </style>

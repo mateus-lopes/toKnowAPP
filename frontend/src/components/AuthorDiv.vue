@@ -8,7 +8,7 @@ export default {
     
 }
 </script>
-<style>
+<style scoped>
     .author {
         rotate: 270deg;
         color: #222;

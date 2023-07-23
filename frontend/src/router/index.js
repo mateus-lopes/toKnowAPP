@@ -9,9 +9,14 @@ const router = createRouter({
       component: () => import("../views/HomeView.vue"),
     },
     {
+      path: "/teamplate",
+      name: "teamplate",
+      component: () => import("../views/TeamplateView.vue"),
+    },
+    {
       path: "/game",
       name: "game",
-      component: () => import("../views/TeamplateView.vue"),
+      component: () => import("../views/GameView.vue"),
     },
   ],
 });

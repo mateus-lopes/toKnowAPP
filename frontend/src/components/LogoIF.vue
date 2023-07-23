@@ -15,5 +15,9 @@ export default {
         right: 1.5em;
         width: 50px;
         height: 50px;
+        transition: all .4s ease-in-out;
+    }
+    img:hover {
+        transform: scale(.8);
     }
 </style>

@@ -1,21 +1,18 @@
 <template>
     <main>
         <UserBtn />
-        <div class="logo-lg">
+        <div class="logo-sm">
             <h1>To Know</h1>
-            <router-link to="/teamplate">
-                <BtnStroke>
-                    Começar
-                </BtnStroke>
-            </router-link>
-            <HelpText />
         </div>
+        
         <LogoIF />
-        <AuthorDiv />
-    </main>
+        <Tips>
+            <p>DICA</p>
+        </Tips>
+</main>
 </template>
 <script>
-import HelpText from '../components/HelpText.vue'
+import Tips from '../components/Tips.vue'
 import BtnStroke from '../components/BtnStroke.vue'
 import LogoIF from '../components/LogoIF.vue'
 import AuthorDiv from '../components/AuthorDiv.vue'
@@ -24,7 +21,7 @@ import UserBtn from '../components/UserBtn.vue'
 export default {
     // add component
     components: {
-        HelpText,
+        Tips,
         BtnStroke,
         LogoIF,
         AuthorDiv,

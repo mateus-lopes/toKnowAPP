@@ -4,18 +4,28 @@
         <div class="logo-sm">
             <h1>To Know</h1>
         </div>
-        <router-link to="/">
-            <BtnStroke>
-                Voltar
-            </BtnStroke>
-        </router-link>
+        <div>
+            <h1>TEAMPLATE</h1>
+            <router-link to="/game">
+                <BtnStroke>
+                    ir pro game
+                </BtnStroke>
+            </router-link>
+            <br>
+            <router-link to="/">
+                <BtnStroke>
+                    Voltar
+                </BtnStroke>
+            </router-link>
+        </div>
         <LogoIF />
-        <span class="help">
-            <img src="../assets/img/iconHelp.png" alt="">
-        </span>
+        <Tips>
+            <p>DICA</p>
+        </Tips>
 </main>
 </template>
 <script>
+import Tips from '../components/Tips.vue'
 import BtnStroke from '../components/BtnStroke.vue'
 import LogoIF from '../components/LogoIF.vue'
 import AuthorDiv from '../components/AuthorDiv.vue'
@@ -24,6 +34,7 @@ import UserBtn from '../components/UserBtn.vue'
 export default {
     // add component
     components: {
+        Tips,
         BtnStroke,
         LogoIF,
         AuthorDiv,
@@ -31,35 +42,3 @@ export default {
     },
 }
 </script>
-
-<style>
-
-.logo-sm {
-    position: fixed;
-    top: 0;
-    left: 1.5em;
-    display: flex;
-    gap: .5em;
-    justify-content: center;
-    align-items: center;
-    max-height: 80px;
-}
-
-.logo-sm h1 {
-    font-size: 2em;
-    color: var(--primary-color);
-    font-family: 'Bungee Shade', cursive;
-    margin-bottom: .5em;
-}
-
-.help {
-    position: fixed;
-    bottom: 1.5em;
-    left: 1.5em;
-}
-
-.help img {
-    max-height: 70px;
-}
-
-</style>

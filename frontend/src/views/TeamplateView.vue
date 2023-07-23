@@ -8,7 +8,7 @@
             <h1>TEAMPLATE</h1>
             <router-link to="/game">
                 <BtnStroke>
-                    ir pro game
+                    Começar
                 </BtnStroke>
             </router-link>
             <br>

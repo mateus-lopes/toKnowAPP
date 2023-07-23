@@ -1,6 +1,8 @@
 <template lang="">
     <div>
-        <img src="../assets/img/logoIF.png" alt="">
+        <a href="https://araquari.ifc.edu.br/" target="_blank">
+            <img src="../assets/img/logoIF.png" alt="">
+        </a>
     </div>
 </template>
 <script>
@@ -9,6 +11,9 @@ export default {
 }
 </script>
 <style scoped>
+    div {
+        cursor: pointer;
+    }
     img {
         position: fixed;
         bottom: 3%;

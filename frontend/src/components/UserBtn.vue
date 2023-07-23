@@ -23,7 +23,6 @@ export default {
     methods: {
         showDropDown() {
             this.key_dropdown = !this.key_dropdown
-            console.log(this.key_dropdown)
         }
     }
 }

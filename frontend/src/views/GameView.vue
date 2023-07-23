@@ -1,10 +1,8 @@
 <template>
     <main>
         <UserBtn />
-        <div class="logo-sm">
-            <h1>To Know</h1>
-        </div>
-        
+        <LogoSM />
+        <Question />
         <LogoIF />
         <Tips>
             <p>DICA</p>
@@ -12,6 +10,8 @@
 </main>
 </template>
 <script>
+import LogoSM from '../components/LogoSM.vue'
+import Question from '../components/Question.vue'
 import Tips from '../components/Tips.vue'
 import BtnStroke from '../components/BtnStroke.vue'
 import LogoIF from '../components/LogoIF.vue'
@@ -21,6 +21,8 @@ import UserBtn from '../components/UserBtn.vue'
 export default {
     // add component
     components: {
+        LogoSM,
+        Question,
         Tips,
         BtnStroke,
         LogoIF,

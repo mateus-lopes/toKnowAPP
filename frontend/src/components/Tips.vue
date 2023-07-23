@@ -38,8 +38,11 @@ export default {
         background: transparent;
     }
     .tips-content {
-        width: 600px;
-        margin-left: calc(-610px + -1.5em);
+        width: 500px;
+        margin-left: calc(-510px + -1.5em);
+    }
+    .tips {
+        font-size: .8em;
     }
     .show {
         margin-left: 0;
@@ -54,10 +57,14 @@ export default {
     
     .tips img {
         max-height: 70px;
-        transition: all .4s ease-in-out;
+        transition: all .6s ease-in-out;
     }
 
     .tips:hover img {
         transform: rotate(360deg);
+    }
+    .tips:focus img, .tips:active img {
+        outline: none;
+        border: none;
     }
 </style>
